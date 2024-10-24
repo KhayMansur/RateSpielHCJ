@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    z-index: 1; 
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjg1a3Bvc3R6eWg3eGJhbmMxajVrem01MXhqamExeTl6M3o0eTRhZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FNfcWhlz0GTkzcnZWh/giphy.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    z-index: -1; 
+    opacity: 0.7; 
+}
+
+h1 {
+    color: #333;
+}
+
+.inputSection {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f4f4f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.lvlSelection form {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.lvlSelection input[type="radio"] {
+    margin: 2px;
+}
+
+.lvlSelection label {
+    margin: 2px; 
+    padding: 2px; 
+}
+
+
+#restartButton {
+    display: none; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    display: block; 
+}
+
+#restartButton:hover {
+    background-color: #45a049; 
+}
+

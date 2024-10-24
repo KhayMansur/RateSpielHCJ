@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RateSpiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="container">
+        <h1>Guess The Number</h1>
+        
+        <div class="lvlSelection">
+            <form id="levelForm">
+                 <input type="radio" name="selectedLvl" value="50">
+                 <label >1 - 50</label><br>
+                 <input type="radio" name="selectedLvl" value="100">
+                 <label >1 - 100</label><br>
+                 <input type="radio" name="selectedLvl" value="200">
+                <label >1 - 200</label>
+            </form> 
+        </div>
+        
+        <p id="rangeMessage">Wähle aus und zeig mir wie gut du bist!  
+        </p>
+        
+        <div class="inputSection">
+            <input type="number" id="guessInput" placeholder="Ihre Zahl hier eingeben!" disabled>
+            <button id="guessButton" disabled>Raten</button>
+        </div>
+
+        <p id="feedback"></p>
+        
+        <button id="restartButton" style="display: none;">Neustarten</button>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
